@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-image: url("./img/hd-blue-sky-wallpaper-full-hd-picture-mvehfqz6w2ges2dj.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    .weather-box{
+        border: 1px solid white;
+        border-radius: 30px;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        backdrop-filter: blur(5px);
+        padding: 150px;
+        margin-bottom: 20px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        h2{
+            color: #0d6efd;
+            font-weight: 700;
+            font-size: 36pt;
+            margin: 10px 0 20px 0;
+        }
+    }
+    .weather-button{
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        backdrop-filter: blur(5px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        button{
+            margin-left: 10px;
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
+}
